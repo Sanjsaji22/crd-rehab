@@ -1,0 +1,53 @@
+/* src/pages/Gallery.module.css */
+
+.galleryGrid {
+    display: grid;
+    /* Creates 3 columns for desktop, and makes them equal width */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Space between images */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galleryItem {
+    overflow: hidden; /* Clips the image if it exceeds the container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galleryItem:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.galleryImage {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent grid look */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.caption {
+    padding: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* --- Responsive Design for smaller screens (optional but highly recommended) --- */
+@media (max-width: 768px) {
+    .galleryGrid {
+        /* Changes to 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .galleryGrid {
+        /* Changes to a single column on mobile phones */
+        grid-template-columns: 1fr;
+    }
+}

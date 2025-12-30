@@ -1,0 +1,79 @@
+.page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--primary-blue);
+  margin-bottom: 50px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #1c2e4a;
+}
+
+/* GRID FOR OFFICERS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* wider cards */
+  gap: 50px;
+}
+
+/* COMMON CARD */
+.card,
+.cardCenter {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 30px;          /* BIGGER BOX */
+  border-radius: 18px;         /* smoother corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect (professional, subtle) */
+.card:hover,
+.cardCenter:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* SAME PHOTO SIZE FOR ALL */
+.photoLarge {
+  width: 260px;
+  height: 320px;              /* taller portrait */
+  object-fit: cover;
+  border-radius: 12px;        /* rectangular with soft corners */
+  border: 5px solid var(--primary-blue);
+  margin-bottom: 22px;
+  background-color: #f5f5f5;
+}
+
+
+
+.name {
+  font-size: 1.35rem;          /* bigger text */
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.role {
+  font-size: 1.05rem;
+  color: #555;
+}
+.card,
+.cardCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

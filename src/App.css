@@ -902,3 +902,66 @@ footer {
     font-size: 12px;
   }
 }
+/* ================================================= */
+/* MOBILE HEADER – FINAL FIX (LOGOS FIXED) */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+  .main-header {
+    padding: 10px 8px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* LOGO ROW */
+  .header-logo-left,
+  .header-logo-right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* FORCE LOGOS INTO ONE ROW */
+  .header-logo-left {
+    order: 1;
+  }
+
+  .header-logo-right {
+    order: 1;
+  }
+
+  /* LOGO SIZE (FIXED) */
+  .header-logo-img {
+    width: 64px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* TITLE BELOW LOGOS */
+  .header-title {
+    order: 2;
+    text-align: center;
+  }
+
+  .header-title h1 {
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  .header-title h2 {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+  .header-title p {
+    font-size: 12px;
+    margin: 0;
+  }
+}

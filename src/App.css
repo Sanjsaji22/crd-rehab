@@ -789,143 +789,53 @@ footer {
   color: #333;
   border-top: 1px solid #eee;
 }
-/* ===============================
-   MOBILE HEADER FIX
-   =============================== */
-@media (max-width: 768px) {
-
-  /* TOP HEADER */
-  .main-header {
-    padding: 16px 10px;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    text-align: center;
-  }
-
-  /* LOGOS */
-  .header-logo {
-    width: 90px;
-    height: auto;
-  }
-
-  /* TITLE */
-  .header-title h1 {
-    font-size: 20px;
-    line-height: 1.25;
-    letter-spacing: 0.5px;
-  }
-
-  .header-title h2 {
-    font-size: 14px;
-    margin-top: 4px;
-  }
-
-  .header-title p {
-    font-size: 13px;
-    margin-top: 4px;
-  }
-
-  /* NAV BAR */
-  .main-nav {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-
-  .nav-inner {
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    padding: 10px 0;
-  }
-
-  .nav-links li button {
-    font-size: 13px;
-    padding: 8px 10px;
-  }
-
-  /* DONATE BUTTON */
-  .donation-item {
-    margin-top: 6px;
-  }
-
-  .donation-btn {
-    padding: 10px 18px;
-    font-size: 14px;
-    border-radius: 20px;
-  }
+.main-header {
+  background: #e6e6e6;
+  padding: 20px 30px;
 }
-@media (max-width: 768px) {
-  .header-logo:last-child {
-    display: none;
-  }
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
 }
-/* ===============================
-   MOBILE HEADER HEIGHT REDUCTION
-   =============================== */
-@media (max-width: 768px) {
 
-  .main-header {
-    padding: 12px 10px;
-  }
-
-  .mobile-header-compact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  /* LOGOS SIDE BY SIDE */
-  .mobile-logo-row {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mobile-logo {
-    width: 65px;
-    height: auto;
-  }
-
-  /* TITLE COMPACT */
-  .header-title h1 {
-    font-size: 18px;
-    line-height: 1.25;
-    margin: 0;
-  }
-
-  .header-title h2 {
-    font-size: 13px;
-    margin: 4px 0;
-  }
-
-  .header-title p {
-    font-size: 12px;
-    margin: 0;
-  }
+/* Logos */
+.header-logo-left,
+.header-logo-right {
+  flex: 0 0 auto;
 }
-/* ===============================
-   DESKTOP HEADER — SAFE DEFAULTS
-   =============================== */
+
 .logo {
   width: 140px;
   height: auto;
 }
 
-/* ===============================
-   MOBILE HEADER OVERRIDES ONLY
-   =============================== */
+/* Title */
+.header-title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-title h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.header-title h2 {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.header-title p {
+  font-size: 14px;
+  margin: 0;
+}
 @media (max-width: 768px) {
 
   .main-header {
@@ -936,28 +846,28 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    text-align: center;
   }
 
-  /* LOGOS SIDE BY SIDE (MOBILE ONLY) */
-  .header-content img.logo {
+  /* Put logos side-by-side */
+  .header-logo-left,
+  .header-logo-right {
+    display: inline-block;
+  }
+
+  .logo {
     width: 65px;
   }
 
-  /* TITLE COMPACT */
   .header-title h1 {
     font-size: 18px;
-    line-height: 1.25;
-    margin: 0;
+    line-height: 1.3;
   }
 
   .header-title h2 {
     font-size: 13px;
-    margin: 4px 0;
   }
 
   .header-title p {
     font-size: 12px;
-    margin: 0;
   }
 }

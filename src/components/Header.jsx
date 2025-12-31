@@ -13,78 +13,59 @@ export default function Header() {
       navigate("/");
       setTimeout(() => {
         const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
-        }
+        if (el) el.scrollIntoView({ behavior: "smooth" });
       }, 300);
     } else {
       const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <>
       {/* ================= TOP HEADER (NOT STICKY) ================= */}
-<div className="main-header">
-  <div className="header-content mobile-header-compact">
+      <header className="main-header">
+        <div className="header-content">
 
-    {/* LOGOS ROW */}
-    <div className="logo">
-      <img
-        src={SKD_LOGO}
-        alt="South Kerala Diocese Logo"
-        className="logo"
-      />
+          {/* LEFT LOGO */}
+          <div className="header-logo header-logo-left">
+            <img
+              src={SKD_LOGO}
+              alt="South Kerala Diocese Logo"
+              className="header-logo-img"
+            />
+          </div>
 
-      <img
-        src={CSI_LOGO}
-        alt="Church of South India Logo"
-        className="logo"
-      />
-    </div>
+          {/* TITLE */}
+          <div className="header-title">
+            <h1>CENTRE FOR REHABILITATION OF THE DISABLED</h1>
+            <h2>(Church of South India – South Kerala Diocese)</h2>
+            <p>LMS Compound, PMG, Thiruvananthapuram, Kerala</p>
+          </div>
 
-    {/* TITLE */}
-    <div className="header-title">
-      <h1>CENTRE FOR REHABILITATION OF THE DISABLED</h1>
-      <h2>(Church of South India – South Kerala Diocese)</h2>
-      <p>LMS Compound, PMG, Thiruvananthapuram, Kerala</p>
-    </div>
+          {/* RIGHT LOGO */}
+          <div className="header-logo header-logo-right">
+            <img
+              src={CSI_LOGO}
+              alt="Church of South India Logo"
+              className="header-logo-img"
+            />
+          </div>
 
-  </div>
-</div>
-
+        </div>
+      </header>
 
       {/* ================= STICKY NAV BAR ONLY ================= */}
       <nav className="main-nav">
-        <ul>
-          <li>
-            <button onClick={() => goToSection("home")}>HOME</button>
-          </li>
+        <ul className="nav-list">
+          <li><button onClick={() => goToSection("home")}>HOME</button></li>
+          <li><button onClick={() => goToSection("about")}>ABOUT US</button></li>
+          <li><button onClick={() => navigate("/officers")}>OFFICERS</button></li>
+          <li><button onClick={() => goToSection("programs")}>PROGRAMS</button></li>
+          <li><button onClick={() => goToSection("gallery")}>GALLERY</button></li>
+          <li><button onClick={() => goToSection("contact")}>CONTACT</button></li>
 
-          <li>
-            <button onClick={() => goToSection("about")}>ABOUT US</button>
-          </li>
-
-          <li>
-            <button onClick={() => navigate("/officers")}>OFFICERS</button>
-          </li>
-
-          <li>
-            <button onClick={() => goToSection("programs")}>PROGRAMS</button>
-          </li>
-
-          <li>
-            <button onClick={() => goToSection("gallery")}>GALLERY</button>
-          </li>
-
-          <li>
-            <button onClick={() => goToSection("contact")}>CONTACT</button>
-          </li>
-
-          {/* DONATION — BIG, RED, ANIMATED, FAR RIGHT */}
+          {/* DONATION */}
           <li className="donation-item">
             <button
               className="donation-btn"

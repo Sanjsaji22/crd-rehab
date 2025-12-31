@@ -361,7 +361,7 @@ const Home = () => {
           <section style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '8px', marginTop: '20px' }}>
             <h3>Bank / Online Transfer Details</h3>
             <p><b>Account Name:</b> CENTRE FOR REHABILITATION OF THE DISABLED</p>
-            <p><b>Account Number:</b> [103473921</p>
+            <p><b>Account Number:</b> 103473921</p>
             <p><b>IFSC Code:</b> SBIN0007898</p>
           </section>
 
@@ -478,7 +478,7 @@ const Home = () => {
             <h3 style={{ marginBottom: '15px' }}>Contact Us</h3>
             <p>LMS Compound, PMG, Palayam</p>
             <p>Thiruvananthapuram, Kerala 695033</p>
-            <p>Phone: <strong>0471-2389028</strong></p>
+            <p>Phone: <strong>+91 9061766293</strong></p>
             <p>Email: <a href="revsjr@live.com" style={footerLinkStyle}>info@crdtrivandrum.org</a></p>
           </div>
 

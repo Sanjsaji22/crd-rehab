@@ -52,8 +52,8 @@ const Contact = () => {
               Kerala, India
             </p>
 
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-            <p><strong>Email:</strong> info@crd.org</p>
+            <p><strong>Phone:</strong> +91 9061766293</p>
+            <p><strong>Email:</strong> revsjr@live.com</p>
           </div>
         </div>
 

@@ -32,17 +32,17 @@ export default function Header() {
   <div className="header-content mobile-header-compact">
 
     {/* LOGOS ROW */}
-    <div className="mobile-logo-row">
+    <div className="logo">
       <img
         src={SKD_LOGO}
         alt="South Kerala Diocese Logo"
-        className="logo mobile-logo"
+        className="logo"
       />
 
       <img
         src={CSI_LOGO}
         alt="Church of South India Logo"
-        className="logo mobile-logo"
+        className="logo"
       />
     </div>
 

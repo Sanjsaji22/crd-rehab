@@ -915,3 +915,49 @@ footer {
     margin: 0;
   }
 }
+/* ===============================
+   DESKTOP HEADER — SAFE DEFAULTS
+   =============================== */
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+/* ===============================
+   MOBILE HEADER OVERRIDES ONLY
+   =============================== */
+@media (max-width: 768px) {
+
+  .main-header {
+    padding: 12px 10px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* LOGOS SIDE BY SIDE (MOBILE ONLY) */
+  .header-content img.logo {
+    width: 65px;
+  }
+
+  /* TITLE COMPACT */
+  .header-title h1 {
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  .header-title h2 {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+  .header-title p {
+    font-size: 12px;
+    margin: 0;
+  }
+}

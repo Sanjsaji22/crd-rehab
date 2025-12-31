@@ -789,3 +789,64 @@ footer {
   color: #333;
   border-top: 1px solid #eee;
 }
+/* =========================================
+   MOBILE HEADER FIXES
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* TOP HEADER AREA */
+  .top-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  /* LOGOS */
+  .top-header img {
+    height: 45px !important;
+    width: auto;
+  }
+
+  /* TITLE TEXT */
+  .site-title {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  .site-subtitle {
+    font-size: 0.85rem;
+  }
+
+  /* NAVBAR */
+  .nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    overflow-x: auto;
+  }
+
+  /* NAV LINKS */
+  .nav-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  /* DONATE BUTTON */
+  .donate-btn {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+}

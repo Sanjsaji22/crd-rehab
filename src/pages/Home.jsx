@@ -235,7 +235,7 @@ const Home = () => {
         maxWidth: "800px",
         margin: "0 auto 50px",
         color: "var(--text-medium)",
-        fontSize: "1.05em"
+        fontSize: "1.3em"
       }}
     >
       The Centre for Rehabilitation of the Disabled (CRD) offers comprehensive,

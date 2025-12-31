@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
@@ -9,7 +10,7 @@ const Contact = () => {
         <div className="contact-form-card">
           <h2>Fill in the Form below to send us a message</h2>
 
-          <form>
+          <form onSubmit={onSubmit}>
             <label>Name</label>
             <input type="text" placeholder="Name" />
 

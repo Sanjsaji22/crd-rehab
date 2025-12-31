@@ -903,7 +903,7 @@ footer {
   }
 }
 /* ================================================= */
-/* MOBILE HEADER – FINAL FIX (LOGOS FIXED) */
+/* MOBILE HEADER – LOGOS SIDE BY SIDE (FINAL) */
 /* ================================================= */
 
 @media (max-width: 768px) {
@@ -912,14 +912,15 @@ footer {
     padding: 10px 8px;
   }
 
+  /* Stack header sections */
   .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
-  /* LOGO ROW */
+  /* CREATE A SINGLE LOGO ROW */
   .header-logo-left,
   .header-logo-right {
     display: inline-flex;
@@ -927,7 +928,13 @@ footer {
     justify-content: center;
   }
 
-  /* FORCE LOGOS INTO ONE ROW */
+  /* Put BOTH logos in same visual row */
+  .header-logo-left,
+  .header-logo-right {
+    margin: 0 8px;
+  }
+
+  /* Wrap logos together */
   .header-logo-left {
     order: 1;
   }
@@ -936,9 +943,9 @@ footer {
     order: 1;
   }
 
-  /* LOGO SIZE (FIXED) */
+  /* FIXED MOBILE LOGO SIZE */
   .header-logo-img {
-    width: 64px;
+    width: 60px;
     height: auto;
     object-fit: contain;
   }
@@ -950,7 +957,7 @@ footer {
   }
 
   .header-title h1 {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.25;
     margin: 0;
   }

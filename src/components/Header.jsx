@@ -28,36 +28,34 @@ export default function Header() {
   return (
     <>
       {/* ================= TOP HEADER (NOT STICKY) ================= */}
-      <div className="main-header">
-        <div className="header-content">
-          
-          {/* LEFT LOGO (SKD) */}
-          <div className="header-logo-left">
-            <img
-              src={SKD_LOGO}
-              alt="South Kerala Diocese Logo"
-              className="logo large-logo"
-            />
-          </div>
+<div className="main-header">
+  <div className="header-content mobile-header-compact">
 
-          {/* CENTER TITLE */}
-          <div className="header-title">
-            <h1>CENTRE FOR REHABILITATION OF THE DISABLED</h1>
-            <h2>(Church of South India – South Kerala Diocese)</h2>
-            <p>LMS Compound, PMG, Thiruvananthapuram, Kerala</p>
-          </div>
+    {/* LOGOS ROW */}
+    <div className="mobile-logo-row">
+      <img
+        src={SKD_LOGO}
+        alt="South Kerala Diocese Logo"
+        className="logo mobile-logo"
+      />
 
-          {/* RIGHT LOGO (CSI) */}
-          <div className="header-logo-right">
-            <img
-              src={CSI_LOGO}
-              alt="Church of South India Logo"
-              className="logo large-logo"
-            />
-          </div>
+      <img
+        src={CSI_LOGO}
+        alt="Church of South India Logo"
+        className="logo mobile-logo"
+      />
+    </div>
 
-        </div>
-      </div>
+    {/* TITLE */}
+    <div className="header-title">
+      <h1>CENTRE FOR REHABILITATION OF THE DISABLED</h1>
+      <h2>(Church of South India – South Kerala Diocese)</h2>
+      <p>LMS Compound, PMG, Thiruvananthapuram, Kerala</p>
+    </div>
+
+  </div>
+</div>
+
 
       {/* ================= STICKY NAV BAR ONLY ================= */}
       <nav className="main-nav">

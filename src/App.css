@@ -869,3 +869,49 @@ footer {
     display: none;
   }
 }
+/* ===============================
+   MOBILE HEADER HEIGHT REDUCTION
+   =============================== */
+@media (max-width: 768px) {
+
+  .main-header {
+    padding: 12px 10px;
+  }
+
+  .mobile-header-compact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* LOGOS SIDE BY SIDE */
+  .mobile-logo-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-logo {
+    width: 65px;
+    height: auto;
+  }
+
+  /* TITLE COMPACT */
+  .header-title h1 {
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0;
+  }
+
+  .header-title h2 {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+
+  .header-title p {
+    font-size: 12px;
+    margin: 0;
+  }
+}

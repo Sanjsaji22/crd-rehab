@@ -60,7 +60,7 @@ const ImageCarousel = () => {
           </h1>
 
           <p className="carousel-hero-subtitle">
-            Empowering Lives • Restoring Dignity
+           Empowering Differently-Abled Lives Through Therapy, Training & Care
           </p>
 
           <a href="/donation-page" className="carousel-hero-btn">

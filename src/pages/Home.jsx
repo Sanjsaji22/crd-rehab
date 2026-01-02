@@ -1,4 +1,5 @@
 // src/pages/Home.jsx
+import { Link } from "react-router-dom";
 
 import React from 'react';
 import ImageCarousel from '../components/ImageCarousel';
@@ -462,16 +463,39 @@ const Home = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 style={{ marginBottom: '15px' }}>Quick Links</h3>
-            <ul style={{ listStyle: 'none', padding: 0, lineHeight: '1.8' }}>
-              <li><a href="/" style={footerLinkStyle}>Home</a></li>
-              <li><a href="/officers" style={footerLinkStyle}>Officers</a></li>
-              <li><a href="#programs" style={footerLinkStyle}>Programs</a></li>
-              <li><a href="#gallery" style={footerLinkStyle}>Gallery</a></li>
-              <li><a href="/donation-page" style={footerLinkStyle}>Donate</a></li>
-            </ul>
-          </div>
+<div>
+  <h3 style={{ marginBottom: '15px' }}>Quick Links</h3>
+
+  <ul style={{ listStyle: 'none', padding: 0, lineHeight: '1.8' }}>
+    
+    {/* Home (route) */}
+    <li>
+      <Link to="/" style={footerLinkStyle}>Home</Link>
+    </li>
+
+    {/* Officers (route) */}
+    <li>
+      <Link to="/officers" style={footerLinkStyle}>Officers</Link>
+    </li>
+
+    {/* Programs (same-page scroll) */}
+    <li>
+      <a href="#programs" style={footerLinkStyle}>Programs</a>
+    </li>
+
+    {/* Gallery (same-page scroll) */}
+    <li>
+      <a href="#gallery" style={footerLinkStyle}>Gallery</a>
+    </li>
+
+    {/* Donate (route) */}
+    <li>
+      <Link to="/donation-page" style={footerLinkStyle}>Donate</Link>
+    </li>
+
+  </ul>
+</div>
+
 
           {/* Contact */}
           <div>

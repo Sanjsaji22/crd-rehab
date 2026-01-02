@@ -75,7 +75,37 @@ const DonationPage = () => {
                 <section style={{ backgroundColor: 'var(--light-grey)', padding: '20px', borderRadius: '8px', borderLeft: '5px solid var(--primary-blue)' }}>
                     <h3>Tax Exemption and Receipt</h3>
                     <p>
-                        All donations are eligible for tax exemption under Section 80G. Please email **finance@crdtrivandrum.org** with transaction details.
+                       Support a Child. Change a Life.
+
+Your generosity directly supports therapy, education and rehabilitation services for differently-abled children.
+
+₹500 – Therapy Support
+
+Helps fund a single physiotherapy or speech therapy session for a child.
+
+₹1,000 – Medical & Nutrition Care
+
+Provides essential medicines, nutritional supplements and basic healthcare support.
+
+₹2,500 – Education Assistance
+
+Supports special education materials, learning aids and school resources.
+
+₹5,000 – Rehabilitation Kit
+
+Covers assistive devices, therapy tools and mobility aids for a child.
+
+₹10,000 – Sponsor a Child (Partial)
+
+Contributes towards residential care, therapy and education for one child.
+
+Custom Donation
+
+Any amount you contribute helps us move closer to building an inclusive and compassionate society.
+
+Donation Trust Note
+
+CRD is a charitable institution under the Church of South India – South Kerala Diocese. All donations are used exclusively for rehabilitation, education and care programs.
                     </p>
                 </section>
             </div>

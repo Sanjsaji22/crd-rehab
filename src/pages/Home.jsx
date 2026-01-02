@@ -383,27 +383,39 @@ const Home = () => {
     <div className="contact-form-card">
       <h2>Fill in the Form below to send us a message</h2>
 
-      <form>
-        <label>Name</label>
-        <input type="text" placeholder="Name" />
+      <form
+  action="https://formspree.io/f/xjgkwwdl"
+  method="POST"
+>
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Name" required />
 
-        <label>Email</label>
-        <input type="email" placeholder="Email" />
+  <label>Email</label>
+  <input type="email" name="email" placeholder="Email" required />
 
-        <label>Phone</label>
-        <input type="text" placeholder="Phone" />
+  <label>Phone</label>
+  <input type="text" name="phone" placeholder="Phone" />
 
-        <label>Address</label>
-        <textarea rows="3" placeholder="Address"></textarea>
+  <label>Address</label>
+  <textarea name="address" rows="3" placeholder="Address"></textarea>
 
-        <label>Comments / Questions / Message</label>
-        <textarea rows="4" placeholder="Message"></textarea>
+  <label>Comments / Questions / Message</label>
+  <textarea
+    name="message"
+    rows="4"
+    placeholder="Message"
+    required
+  ></textarea>
 
-        <button type="submit" className="contact-submit">
-          Send Message
-        </button>
-      </form>
-    </div>
+  {/* Optional hidden fields */}
+  <input type="hidden" name="_subject" value="New Message from CRD Website" />
+  <input type="hidden" name="_template" value="table" />
+
+  <button type="submit" className="contact-submit">
+    Send Message
+  </button>
+</form>
+</div>
 
     {/* RIGHT – MAP + DETAILS */}
     <div className="contact-info-card">

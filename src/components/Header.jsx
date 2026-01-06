@@ -43,36 +43,37 @@ export default function Header() {
       </header>
 
       {/* ===== STICKY NAV ===== */}
-      <nav className="main-nav">
-        {/* Hamburger */}
-        <button
-          className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
+      {/* ================= STICKY NAV ================= */}
+<nav className="main-nav">
 
-        <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-          <li><button onClick={() => goToSection("home")}>HOME</button></li>
-          <li><button onClick={() => goToSection("about")}>ABOUT</button></li>
-          <li><button onClick={() => navigate("/officers")}>OFFICERS</button></li>
-          <li><button onClick={() => goToSection("programs")}>PROGRAMS</button></li>
-          <li><button onClick={() => goToSection("gallery")}>GALLERY</button></li>
-          <li><button onClick={() => goToSection("contact")}>CONTACT</button></li>
+  {/* LEFT: Hamburger */}
+  <button
+    className="hamburger"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    ☰
+  </button>
 
-          <li className="donation-item">
-            <button
-              className="donation-btn"
-              onClick={() => {
-                setMenuOpen(false);
-                navigate("/donation-page");
-              }}
-            >
-              DONATE
-            </button>
-          </li>
-        </ul>
-      </nav>
+  {/* CENTER / DESKTOP MENU */}
+  <ul className={menuOpen ? "nav-links open" : "nav-links"}>
+    <li><button onClick={() => goToSection("home")}>HOME</button></li>
+    <li><button onClick={() => goToSection("about")}>ABOUT</button></li>
+    <li><button onClick={() => navigate("/officers")}>OFFICERS</button></li>
+    <li><button onClick={() => goToSection("programs")}>PROGRAMS</button></li>
+    <li><button onClick={() => goToSection("gallery")}>GALLERY</button></li>
+    <li><button onClick={() => goToSection("contact")}>CONTACT</button></li>
+  </ul>
+
+  {/* RIGHT: DONATE (ALWAYS VISIBLE) */}
+  <button
+    className="donate-mobile-btn"
+    onClick={() => navigate("/donation-page")}
+  >
+    DONATE
+  </button>
+
+</nav>
+
     </>
   );
 }

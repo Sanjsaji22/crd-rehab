@@ -1132,6 +1132,66 @@ footer {
     width: 90%;
   }
 }
+/* ============================= */
+/* MOBILE DONATE BUTTON (FIXED) */
+/* ============================= */
+
+.donate-mobile-btn {
+  display: none;
+  background: #cc0000;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(204,0,0,0.4);
+}
+
+/* NAV BAR LAYOUT */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .donate-mobile-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0066cc;
+    flex-direction: column;
+    align-items: stretch;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    max-height: 500px;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .nav-links button {
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+  }
+}
 
 
 

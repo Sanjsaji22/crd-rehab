@@ -12,34 +12,22 @@ export default function Header() {
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       }, 300);
     } else {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: "smooth" });
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <>
-      {/* ================= TOP HEADER (NOT STICKY) ================= */}
+      {/* ===== TOP HEADER (NOT STICKY) ===== */}
       <header className="main-header">
         <div className="header-content">
 
-          {/* LOGOS (WRAPPED TO PREVENT OVERLAP ON MOBILE) */}
-          <div className="header-logos">
-            <img
-              src={SKD_LOGO}
-              alt="South Kerala Diocese Logo"
-              className="header-logo-img"
-            />
-
-            <img
-              src={CSI_LOGO}
-              alt="Church of South India Logo"
-              className="header-logo-img"
-            />
+          {/* LEFT LOGO */}
+          <div className="header-logo-left">
+            <img src={SKD_LOGO} alt="SKD Logo" className="header-logo-img" />
           </div>
 
           {/* TITLE */}
@@ -49,10 +37,15 @@ export default function Header() {
             <p>LMS Compound, PMG, Thiruvananthapuram, Kerala</p>
           </div>
 
+          {/* RIGHT LOGO */}
+          <div className="header-logo-right">
+            <img src={CSI_LOGO} alt="CSI Logo" className="header-logo-img" />
+          </div>
+
         </div>
       </header>
 
-      {/* ================= STICKY NAV (ONLY THIS IS STICKY) ================= */}
+      {/* ===== STICKY NAV ===== */}
       <nav className="main-nav">
         <ul>
           <li><button onClick={() => goToSection("home")}>HOME</button></li>
@@ -62,12 +55,8 @@ export default function Header() {
           <li><button onClick={() => goToSection("gallery")}>GALLERY</button></li>
           <li><button onClick={() => goToSection("contact")}>CONTACT</button></li>
 
-          {/* DONATION */}
           <li className="donation-item">
-            <button
-              className="donation-btn"
-              onClick={() => navigate("/donation-page")}
-            >
+            <button className="donation-btn" onClick={() => navigate("/donation-page")}>
               DONATE
             </button>
           </li>
@@ -76,4 +65,3 @@ export default function Header() {
     </>
   );
 }
-

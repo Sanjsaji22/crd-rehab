@@ -23,15 +23,21 @@ export default function Header() {
 
   return (
     <>
-      {/* ================= TOP HEADER ================= */}
+      {/* ================= TOP HEADER (NOT STICKY) ================= */}
       <header className="main-header">
         <div className="header-content">
 
-          {/* LEFT LOGO */}
-          <div className="header-logo-left">
+          {/* LOGOS (WRAPPED TO PREVENT OVERLAP ON MOBILE) */}
+          <div className="header-logos">
             <img
               src={SKD_LOGO}
               alt="South Kerala Diocese Logo"
+              className="header-logo-img"
+            />
+
+            <img
+              src={CSI_LOGO}
+              alt="Church of South India Logo"
               className="header-logo-img"
             />
           </div>
@@ -43,19 +49,10 @@ export default function Header() {
             <p>LMS Compound, PMG, Thiruvananthapuram, Kerala</p>
           </div>
 
-          {/* RIGHT LOGO */}
-          <div className="header-logo-right">
-            <img
-              src={CSI_LOGO}
-              alt="Church of South India Logo"
-              className="header-logo-img"
-            />
-          </div>
-
         </div>
       </header>
 
-      {/* ================= STICKY NAV ================= */}
+      {/* ================= STICKY NAV (ONLY THIS IS STICKY) ================= */}
       <nav className="main-nav">
         <ul>
           <li><button onClick={() => goToSection("home")}>HOME</button></li>
@@ -65,6 +62,7 @@ export default function Header() {
           <li><button onClick={() => goToSection("gallery")}>GALLERY</button></li>
           <li><button onClick={() => goToSection("contact")}>CONTACT</button></li>
 
+          {/* DONATION */}
           <li className="donation-item">
             <button
               className="donation-btn"
@@ -78,3 +76,4 @@ export default function Header() {
     </>
   );
 }
+

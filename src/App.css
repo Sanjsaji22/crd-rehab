@@ -833,6 +833,57 @@ footer {
   color: #333;
   border-top: 1px solid #eee;
 }
+/* ===================================== */
+/* MOBILE HEADER – FINAL FIX (SIDE-BY-SIDE LOGOS) */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .header-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "logos logos"
+      "title title";
+    justify-content: center;
+    row-gap: 10px;
+  }
+
+  .header-logo-left {
+    grid-area: logos;
+    justify-self: center;
+  }
+
+  .header-logo-right {
+    grid-area: logos;
+    justify-self: center;
+    margin-left: 12px;
+  }
+
+  .header-logo-left img,
+  .header-logo-right img {
+    width: 60px;
+    height: auto;
+  }
+
+  .header-title {
+    grid-area: title;
+    text-align: center;
+  }
+
+  .header-title h1 {
+    font-size: 17px;
+    line-height: 1.25;
+  }
+
+  .header-title h2 {
+    font-size: 13px;
+  }
+
+  .header-title p {
+    font-size: 12px;
+  }
+}
 
 
 

@@ -1034,9 +1034,7 @@ footer {
   overflow-x: auto;
 }
 
-.main-nav ul::-webkit-scrollbar {
-  display: none;
-}
+
 
 @media (max-width: 768px) {
   .donation-item {

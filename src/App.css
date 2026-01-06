@@ -1193,5 +1193,147 @@ footer {
   }
 }
 
+/* ============================= */
+/* NAV BAR LAYOUT */
+/* ============================= */
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1500;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 14px;
+  background: #0066cc;
+}
+
+/* ============================= */
+/* DONATE BUTTON – DESKTOP + MOBILE */
+/* ============================= */
+
+.donate-nav-btn {
+  background: #cc0000;
+  color: white;
+  border: none;
+
+  padding: 10px 22px;
+  border-radius: 24px;
+
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  box-shadow: 0 5px 14px rgba(204, 0, 0, 0.45);
+
+  animation: donatePulse 2.5s infinite;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.donate-nav-btn:hover {
+  background: #990000;
+  transform: scale(1.08);
+  animation: none;
+}
+
+/* ============================= */
+/* HAMBURGER */
+/* ============================= */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* NAV LINKS */
+/* ============================= */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+/* ============================= */
+/* MOBILE BEHAVIOUR */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: #0066cc;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .nav-links.open {
+    max-height: 500px;
+  }
+
+  .nav-links button {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .donate-nav-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================= */
+/* DONATE ANIMATION */
+/* ============================= */
+
+@keyframes donatePulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(204,0,0,0.6);
+  }
+  70% {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 14px rgba(204,0,0,0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 

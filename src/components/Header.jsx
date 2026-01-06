@@ -46,7 +46,7 @@ export default function Header() {
       {/* ================= STICKY NAV ================= */}
 <nav className="main-nav">
 
-  {/* LEFT: Hamburger */}
+  {/* LEFT – HAMBURGER (MOBILE ONLY) */}
   <button
     className="hamburger"
     onClick={() => setMenuOpen(!menuOpen)}
@@ -54,7 +54,7 @@ export default function Header() {
     ☰
   </button>
 
-  {/* CENTER / DESKTOP MENU */}
+  {/* CENTER – NAV LINKS */}
   <ul className={menuOpen ? "nav-links open" : "nav-links"}>
     <li><button onClick={() => goToSection("home")}>HOME</button></li>
     <li><button onClick={() => goToSection("about")}>ABOUT</button></li>
@@ -64,15 +64,17 @@ export default function Header() {
     <li><button onClick={() => goToSection("contact")}>CONTACT</button></li>
   </ul>
 
-  {/* RIGHT: DONATE (ALWAYS VISIBLE) */}
+  {/* RIGHT – DONATE (DESKTOP + MOBILE) */}
   <button
-    className="donate-mobile-btn"
+    className="donate-nav-btn"
     onClick={() => navigate("/donation-page")}
   >
     DONATE
   </button>
 
 </nav>
+
+
 
     </>
   );

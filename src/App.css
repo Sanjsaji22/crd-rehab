@@ -41,77 +41,75 @@ body {
 /* HEADER – CLEAN & FIXED (DESKTOP + MOBILE) */
 /* ================================================= */
 
+/* ================= HEADER ================= */
+
 .main-header {
   background: #e6e6e6;
-  border-bottom: 4px solid #0066cc;
+  border-bottom: 4px solid var(--primary-blue);
 }
 
 .header-content {
   max-width: 1200px;
   margin: auto;
-  padding: 16px 20px;
+  padding: 18px 20px;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 160px 1fr 160px;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
 }
 
-/* LOGO ROW (DESKTOP: LEFT & RIGHT) */
-.header-logos {
+/* Logos */
+.header-logo-left,
+.header-logo-right {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
-  flex-shrink: 0;
 }
 
 .header-logo-img {
-  width: 90px;
+  width: 130px;
   height: auto;
   object-fit: contain;
 }
 
-/* TITLE */
+/* Title */
 .header-title {
-  flex: 1;
   text-align: center;
 }
 
 .header-title h1 {
-  font-size: 26px;
-  color: #004c99;
+  font-size: 28px;
+  color: var(--secondary-blue);
+  margin: 0;
   letter-spacing: 1.2px;
 }
 
 .header-title h2 {
-  font-size: 15px;
+  font-size: 16px;
   margin: 6px 0;
-  color: #555;
+  color: var(--text-medium);
 }
 
 .header-title p {
-  font-size: 13px;
+  font-size: 14px;
+  margin: 0;
   color: #777;
 }
 
-/* ================================================= */
-/* MOBILE FIX – LOGOS SIDE BY SIDE */
-/* ================================================= */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
   .header-content {
+    display: flex;
     flex-direction: column;
-    padding: 10px 12px;
     gap: 10px;
   }
 
-  /* FORCE LOGOS IN ONE ROW */
-  .header-logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 14px;
+  /* LOGO ROW */
+  .header-logo-left,
+  .header-logo-right {
+    display: inline-flex;
   }
 
   .header-logo-img {
@@ -119,8 +117,8 @@ body {
   }
 
   .header-title h1 {
-    font-size: 17px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.25;
   }
 
   .header-title h2 {
@@ -131,11 +129,36 @@ body {
     font-size: 12px;
   }
 }
+/* ================= HEADER ================= */
 
+.main-header {
+  background: #e6e6e6;
+  border-bottom: 4px solid var(--primary-blue);
+}
 
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
 
-/* Logo containers */
+  display: grid;
+  grid-template-columns: 160px 1fr 160px;
+  align-items: center;
+}
 
+/* Logos */
+.header-logo-left,
+.header-logo-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo-img {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+}
 
 /* Title */
 .header-title {
@@ -143,23 +166,56 @@ body {
 }
 
 .header-title h1 {
-  font-size: 3.3rem;
-  margin: 0;
+  font-size: 28px;
   color: var(--secondary-blue);
-  letter-spacing: 1.5px;
+  margin: 0;
+  letter-spacing: 1.2px;
 }
 
 .header-title h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 16px;
   margin: 6px 0;
   color: var(--text-medium);
 }
 
 .header-title p {
-  font-size: 1rem;
-  color: #777;
+  font-size: 14px;
   margin: 0;
+  color: #777;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* LOGO ROW */
+  .header-logo-left,
+  .header-logo-right {
+    display: inline-flex;
+  }
+
+  .header-logo-img {
+    width: 60px;
+  }
+
+  .header-title h1 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .header-title h2 {
+    font-size: 13px;
+  }
+
+  .header-title p {
+    font-size: 12px;
+  }
 }
 
 /* ================================================= */

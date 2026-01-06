@@ -73,27 +73,32 @@ const DonationPage = () => {
                 </section>
 
                 <section style={{ backgroundColor: 'var(--light-grey)', padding: '20px', borderRadius: '8px', borderLeft: '5px solid var(--primary-blue)' }}>
-                    <h3>Tax Exemption and Receipt</h3>
+                    <h3>Support our cause!</h3>
                     <p>
                        Support a Child. Change a Life.
 
 Your generosity directly supports therapy, education and rehabilitation services for differently-abled children.
 
+
 ₹500 – Therapy Support
 
 Helps fund a single physiotherapy or speech therapy session for a child.
+
 
 ₹1,000 – Medical & Nutrition Care
 
 Provides essential medicines, nutritional supplements and basic healthcare support.
 
+
 ₹2,500 – Education Assistance
 
 Supports special education materials, learning aids and school resources.
 
+
 ₹5,000 – Rehabilitation Kit
 
 Covers assistive devices, therapy tools and mobility aids for a child.
+
 
 ₹10,000 – Sponsor a Child (Partial)
 

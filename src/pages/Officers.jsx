@@ -34,7 +34,7 @@ export default function Officers() {
 
           <div className={styles.card}>
             <img src="/officer-2.jpg" alt="" className={styles.photoLarge} />
-            <h4 className={styles.name}>Dr. T. T. Praseen</h4>
+            <h4 className={styles.name}>Dr. T. T. Praveen</h4>
             <p className={styles.role}>Secretary</p>
           </div>
 

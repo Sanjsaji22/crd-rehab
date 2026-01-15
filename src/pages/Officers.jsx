@@ -16,7 +16,7 @@ export default function Officers() {
             alt="Rt. Rev. Dr. S.  Christopher Vijayan"
             className={styles.photoLarge}
           />
-          <h4 className={styles.name}>Rt. Rev. Dr. Timothy Ravinder</h4>
+          <h4 className={styles.name}>Rt. Rev. Dr. S.  Christopher Vijayan</h4>
           <p className={styles.role}>Bishop & Moderator's Commissary, CSI South Kerala Diocese</p>
         </div>
       </div>

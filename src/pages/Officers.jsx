@@ -12,12 +12,12 @@ export default function Officers() {
 
         <div className={styles.cardCenter}>
           <img
-            src="/diocese-head.JPG"
-            alt="Rt. Rev. Dr. Timothy Ravinder"
+            src="/diocese-head.png"
+            alt="Rt. Rev. Dr. S.  Christopher Vijayan"
             className={styles.photoLarge}
           />
           <h4 className={styles.name}>Rt. Rev. Dr. Timothy Ravinder</h4>
-          <p className={styles.role}>Bishop, CSI South Kerala Diocese</p>
+          <p className={styles.role}>Bishop & Moderator's Commissary, CSI South Kerala Diocese</p>
         </div>
       </div>
 

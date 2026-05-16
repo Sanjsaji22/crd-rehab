@@ -13,10 +13,10 @@ export default function Officers() {
         <div className={styles.cardCenter}>
           <img
             src="/diocese-head.png"
-            alt="Rt. Rev. Dr. S.  Christopher Vijayan"
+            alt="Rt. Rev. Dr. Prinstone Ben"
             className={styles.photoLarge}
           />
-          <h4 className={styles.name}>Rt. Rev. Dr. S.  Christopher Vijayan</h4>
+          <h4 className={styles.name}>Rt. Rev. Dr. Prinstone Ben</h4>
           <p className={styles.role}>Bishop & Moderator's Commissary, CSI South Kerala Diocese</p>
         </div>
       </div>
@@ -28,7 +28,7 @@ export default function Officers() {
         <div className={styles.grid}>
           <div className={styles.card}>
             <img src="/officer-1.jpg" alt="" className={styles.photoLarge} />
-            <h4 className={styles.name}>Rev. Dr. Prinstone Benn</h4>
+            <h4 className={styles.name}>Rev. Dr. Gilbert Jose</h4>
             <p className={styles.role}>Vice Chairman</p>
           </div>
 

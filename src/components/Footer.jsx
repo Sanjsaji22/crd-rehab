@@ -30,7 +30,7 @@ const footerStyle = {
     rel="noopener noreferrer"
     className="footer-action-btn whatsapp-btn"
   >
-    WhatsApp Us
+     WhatsApp Us
   </a>
 
   {/* Call */}

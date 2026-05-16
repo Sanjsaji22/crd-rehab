@@ -1450,3 +1450,22 @@ footer {
   }
 }
 
+/* Fix horizontal overflow/scrollbar */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix nav overflow */
+.main-nav {
+  overflow: hidden;
+}
+
+.nav-inner {
+  overflow: hidden;
+}
+
+.nav-links {
+  overflow: hidden;
+}

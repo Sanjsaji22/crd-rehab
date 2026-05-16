@@ -549,3 +549,28 @@ footer {
   /* Contact */
   .contact-container { grid-template-columns: 1fr; }
 }
+
+/* ================================================= */
+/* DONATE BUTTON – FORCE RED                         */
+/* ================================================= */
+
+li.donation-item button.donation-btn {
+  background-color: #cc0000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 30px;
+  padding: 10px 26px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(204, 0, 0, 0.4);
+  animation: donatePulse 2.5s infinite;
+}
+
+li.donation-item button.donation-btn:hover {
+  background-color: #990000 !important;
+  transform: scale(1.08);
+  animation: none;
+}

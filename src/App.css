@@ -574,3 +574,19 @@ li.donation-item button.donation-btn:hover {
   transform: scale(1.08);
   animation: none;
 }
+button.donation-btn {
+  background-color: #cc0000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 10px 26px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(204, 0, 0, 0.4) !important;
+}
+
+button.donation-btn:hover {
+  background-color: #990000 !important;
+}

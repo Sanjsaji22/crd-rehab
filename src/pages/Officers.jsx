@@ -17,7 +17,7 @@ export default function Officers() {
             className={styles.photoLarge}
           />
           <h4 className={styles.name}>Rt. Rev. Dr. Prinstone Ben</h4>
-          <p className={styles.role}>Bishop & Moderator's Commissary, CSI South Kerala Diocese</p>
+          <p className={styles.role}>Bishop, CSI South Kerala Diocese</p>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ export default function Officers() {
           />
           <h4 className={styles.name}>Rev. Dr. Adv. Stephens Justin Raj</h4>
           <p className={styles.role}>
-            Director, Centre for Rehabilitation of the Disabled
+           Director, Centre for Rehabilitation of the Disabled
           </p>
         </div>
       </div>
